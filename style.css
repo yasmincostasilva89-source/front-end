@@ -1,0 +1,397 @@
+/* =========================
+   CONFIGURAÇÕES DO SITE
+========================= */
+
+:root {
+    --verde-escuro: #075c2b;
+    --verde: #239447;
+    --verde-claro: #eaf5ed;
+    --branco: #ffffff;
+    --cinza-fundo: #f6f8f6;
+    --cinza: #66736b;
+    --cinza-claro: #dce5df;
+    --texto: #26352d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--cinza-fundo);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    width: 100%;
+    background: linear-gradient(135deg, var(--verde-escuro), var(--verde));
+    color: var(--branco);
+    padding: 45px 20px 30px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.subtitulo {
+    max-width: 650px;
+    margin: 8px auto 25px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu-navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-navegacao a {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 20px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+    background: rgba(255, 255, 255, 0.08);
+    transition: 0.25s ease;
+}
+
+.menu-navegacao a:hover {
+    background: white;
+    color: var(--verde-escuro);
+    transform: translateY(-2px);
+}
+
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+.conteudo-principal {
+    width: min(900px, 92%);
+    margin: 45px auto;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+/* Seções */
+
+.secao {
+    background-color: #fff;
+    padding: 25px 23px;
+    margin-bottom: 38px;
+    border-radius: 0;
+    border-top: 1px solid #dce2de;
+    border-bottom: 1px solid #dce2de;
+    border-left: 0;
+    border-right: 0;
+}
+
+.secao h2 {
+    color: #123b20;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.secao h3 {
+    font-size: 15px;
+    color: var(--cor-texto);
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.secao p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+
+/* Links */
+
+.link-leia-mais {
+    color: #42945c;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.link-leia-mais:hover {
+    color: #1c5f2c;
+}
+
+
+/* Logo */
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+.container-logo img {
+    max-width: 140px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.container-logo figcaption {
+    font-size: 12px;
+    color: #5f6b63;
+}
+
+
+/* Informações */
+
+.informacoes {
+    background-color: #e6eee8;
+    text-align: center;
+    padding: 45px 20px 27px;
+    margin-bottom: 37px;
+}
+
+.informacoes h2 {
+    color: #07561e;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+.informacoes p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 22px;
+}
+
+
+/* Contato */
+
+.contato {
+    background-color: #fff;
+    text-align: center;
+    padding: 28px 20px 33px;
+    border-top: 4px solid #42945c;
+    border-bottom: 4px solid #42945c;
+}
+
+.contato h2 {
+    color: #07561e;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+.contato p {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 13px;
+}
+
+.contato a {
+    color: #42945c;
+}
+
+
+/* Rodapé */
+
+.rodape {
+    width: 100%;
+    background-color: #005214;
+    color: white;
+    text-align: center;
+    padding: 39px 10px;
+    min-height: 96px;
+    box-sizing: border-box;
+}
+
+.rodape p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.link-leia-mais {
+    display: inline-block;
+
+    margin-top: 5px;
+    padding: 5px 0;
+
+    color: var(--verde);
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+    transition: 0.2s;
+}
+
+.link-leia-mais:hover {
+    color: var(--verde-escuro);
+    border-bottom-color: var(--verde);
+}
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+#informacoes {
+    margin-top: 35px;
+    padding: 35px 25px;
+
+    text-align: center;
+
+    background: var(--verde-claro);
+    border-radius: 10px;
+}
+
+#informacoes h2 {
+    color: var(--verde-escuro);
+}
+
+#informacoes p {
+    max-width: 600px;
+    margin: 0 auto 15px;
+}
+
+/* =========================
+   CONTATO
+========================= */
+
+address {
+    margin-top: 35px;
+    padding: 30px;
+
+    background: white;
+
+    border-top: 3px solid var(--verde);
+    border-bottom: 3px solid var(--verde);
+
+    color: var(--cinza);
+    font-style: normal;
+    text-align: center;
+}
+
+address strong {
+    display: block;
+    margin-bottom: 8px;
+
+    color: var(--verde-escuro);
+    font-size: 19px;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    margin-top: 50px;
+    padding: 22px;
+
+    background: var(--verde-escuro);
+    color: white;
+
+    text-align: center;
+    font-size: 13px;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+button,
+.botao {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border: 0;
+    border-radius: 6px;
+
+    background: var(--verde);
+    color: white;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+button:hover,
+.botao:hover {
+    background: var(--verde-escuro);
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 650px) {
+
+    .cabecalho {
+        padding: 35px 15px 25px;
+    }
+
+    .cabecalho h1 {
+        font-size: 24px;
+    }
+
+    .menu-navegacao {
+        gap: 7px;
+    }
+
+    .menu-navegacao a {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    .conteudo-principal {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    .secao {
+        padding: 23px 20px;
+    }
+
+    .secao h2 {
+        font-size: 19px;
+    }
+
+    address {
+        padding: 25px 15px;
+    }
+}
